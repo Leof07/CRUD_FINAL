@@ -16,4 +16,8 @@ class Curso extends Model
     protected $fillable = [
         'nombre',
     ];
+    
+    public static function getList(){
+        return Curso::all();
+    }
 }
